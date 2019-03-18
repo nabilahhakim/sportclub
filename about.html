@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+
+<body>
+    <center><img id="logo 1" src="img/pbe3.PNG"></center>
+
+    <br>
+    <div class="topnav">
+        <a href="index.html">🏠Home</a>
+        <a href="allmovies.html">🎥All Movies</a>
+        <a class="active" href="about.html">⚠️About</a>
+        <a href="contactus.html">☎️Contact Us</a>
+    </div>
+    <br>
+    <h1 id="one">About Sao Paulo Movie Store</h1>
+    <center>
+        <h3>***This is a store for your movie nights.</h3>
+    </center>
+    <br>
+    <center>
+        <p>😄😍😄😍😄😍😄😍😄😍😄😍😄😍😄😍😄😍😄😍😄😍😄😍😄😍😄😍😄😍😄😍😄😍😄😍😄😍😄😍😄😍😄😍😄😍😄 </p>
+    </center>
+    <br>
+    <center>
+        <h4>Store Location</h4>
+    </center>
+    <center>
+        <h2>We have 5 stores around the world.</h2>
+    </center>
+    <br>
+   
+
+    <img src="img/map1.PNG" alt="about 1" class="tengah">
+    <ul style="list-style: none;">
+
+        <b>
+            <center>
+                <li>😄 Quadra 706 Sul Alameda 3, 956, Palmas-TO</li>
+            </center>
+        </b>
+        <b>
+            <center>
+                <li>☎️ +55 (14) 3364-2428</li>
+            </center>
+        </b>
+    </ul>
+    <br>
+    <img src="img/map2.png" alt="about 1" class="tengah2">
+    <ul style="list-style: none;">
+
+        <b>
+            <center>
+                <li>😄 Rua Princesa dos Campos, 1743, Campo Mourão-PR</li>
+            </center>
+        </b>
+        <b>
+            <center>
+                <li>☎️ +55 (14) 3364-5254</li>
+            </center>
+        </b>
+    </ul>
+    <br>
+    <img src="img/map3.jpg" alt="about 1" class="tengah3">
+    <ul style="list-style: none;">
+
+        <b>
+            <center>
+                <li>😄 Rua Antônio Amâncio Filho, 984, Patos de Minas-MG</li>
+            </center>
+        </b>
+        <b>
+            <center>
+                <li>☎️ +55 (14) 3323-5434</li>
+            </center>
+        </b>
+    </ul>
+    <br>
+    <img src="img/map4.jpg" alt="about 1" class="tengah4">
+    <ul style="list-style: none;">
+
+        <b>
+            <center>
+                <li>😄 Rua Antônio Amâncio Filho, 984, Patos </li>
+            </center>
+        </b>
+        <b>
+            <center>
+                <li>☎️ +55 (14) 3377-5434</li>
+            </center>
+        </b>
+    </ul>
+    <br>
+    <img src="img/map5.jpg" alt="about 1" class="tengah5">
+    <ul style="list-style: none;">
+
+        <b>
+            <center>
+                <li>😄 Rua Antônio Amâncio Filho </li>
+            </center>
+        </b>
+        <b>
+            <center>
+                <li>☎️ +55 (14) 6623-5434</li>
+            </center>
+        </b>
+    </ul>
+    <br>
+    <ul style="list-style: none;">
+        <center>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </center>
+    </ul>
+    <p id="touch">Get in touch here if you have any queries or issues.</p>
+    <br>
+     <center>
+     <script type='text/javascript'>
+    var map, baseLayer, tools, currentShape;
+     function GetMap() {
+        map = new Microsoft.Maps.Map('#myMap', {
+            credentials: 'YourBingMapsKey'
+        });
+
+        //Create a base layer to add drawn shapes.
+        baseLayer = new Microsoft.Maps.Layer();
+        map.layers.insert(baseLayer);
+
+        //Load the DrawingTools module.
+        Microsoft.Maps.loadModule('Microsoft.Maps.DrawingTools', function () {
+            //Create an instance of the DrawingTools class and bind it to the map.
+            tools = new Microsoft.Maps.DrawingTools(map);
+
+            Microsoft.Maps.Events.addHandler(tools, 'drawingChanging', function (e) {
+                //When the drawing is changing, clear the base layer.
+                baseLayer.clear();
+            });
+
+
+            //When the user presses 'esc', take the polygon out of edit mode and re-add to base map.
+            document.getElementById('myMap').onkeypress = function (e) {
+                if (e.charCode === 27) {
+                    tools.finish(shapeDrawn);
+                    currentShape = null;
+                }
+            };
+        });
+    }
+
+    function drawPolygon() {
+        //Stop any current drawing.
+        if (currentShape) {
+            tools.finish(shapeDrawn);
+            currentShape = null;
+        }
+
+        //Create a new polygon.
+        tools.create(Microsoft.Maps.DrawingTools.ShapeType.polygon, function (s) {
+            currentShape = s;
+        });
+    }
+
+    function shapeDrawn(s) {
+        baseLayer.add(s);
+    }
+    </script>
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
+
+<body>
+    <div id="myMap" style="position:relative;width:600px;height:400px;"></div><br />
+    <input type="button" onclick="drawPolygon()" value="Draw Polygon" />
+</body></center>
+    <center>
+        <p>Help & Support</p>
+        
+    </center>
+    
+    <ul style="list-style: none;">
+      <center><li><a href="https://www.google.com">Click here for FAQs, order information, T&Cs, errata and code downloads</a></li></center>
+    </ul>
+    <div id="test" tabindex="-1">
+    <textarea>---</textarea>
+    <p id="myP">submit</p>
+
+<button type="button" onclick="myFunction()">key in</button>
+ 
+<script>
+function myFunction() {
+  document.getElementById("myP").style.fontSize = "xx-large";
+}
+</script>
+
+</div>
+</body>
+</html>

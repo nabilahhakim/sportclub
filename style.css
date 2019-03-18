@@ -1,0 +1,188 @@
+body {
+    background-color: aliceblue;
+    background-size: cover;
+}
+
+#logo 1 img {
+    float: none;
+    text-align: center;
+}
+
+#satu {
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#dua {
+    float: none;
+    text-align: center;
+}
+
+#tiga {
+    float: none;
+    text-align: center;
+}
+
+#empat {
+    float: none;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lima {
+    float: none;
+    text-align: center;
+}
+
+#enam {
+    float: none;
+    text-align: center;
+}
+
+#tujuh {
+    float: none;
+    text-align: center;
+}
+
+#one {
+    float: none;
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+    align-items: center;
+    width: 100%;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 300px;
+    align-items: center;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+div.comment {
+    text-align: left;
+}
+
+.tengah {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.tengah2{
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.tengah3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.tengah4{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.tengah5{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#touch{
+    text-align: center;
+}
+.submitbutton{
+    
+}
+#test {
+    border: 2px dashed #f90;
+    width: 50%;
+    margin: 0 auto;
+}
+
+textarea {
+    display: block;
+    width: 80%;
+    margin: 1em auto;
+}
+li {list-style-type: none;
+font-size: 16pt;
+}
+.mail {
+margin: left;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 400px;
+background : #D8F1F8;
+border: 1px soild silver;
+}
+.mail h2 {
+margin-left: 38px;
+}
+input {
+font-size: 10pt;
+}
+input:focus, textarea:focus{
+background-color: lightyellow;
+}
+input submit {
+font-size: 5pt;
+}
+.rq {
+color: #FF0000;
+font-size: 5pt;
+}

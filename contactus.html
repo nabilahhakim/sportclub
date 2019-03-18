@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+
+<body>
+    <h2 class="contact"></h2>
+    <header>
+        <h2 class="logo">
+            <a href="index.html">
+                <center><img src="img/pbe3.PNG" alt="São Paulo Movie Store" title="São
+Paulo Movie Store" /></center>
+            </a>
+        </h2>
+        <div class="topnav">
+            <a href="index.html">🏠Home</a>
+            <a href="allmovies.html">🎥All Movies</a>
+            <a href="about.html">⚠️About</a>
+            <a class="active" href="contactus.html">☎️Contact Us</a>
+        </div>
+    </header>
+    <div class="yield">
+        <main>
+            <section>
+                <h1>Contact Us</h1>
+                <p>Your comments are important to us. </p>
+                <div class="success label">
+                    Form sumbitted successfully.
+                </div>
+                <div class="alert label">
+                    Form submissing failed. It seems that you’re offline now.
+                </div>
+                <div class='tab-panels'>
+                    <div class='tabs'>
+                        <!-- Tab navigation -->
+                        <a href='#tabcontent1' id='tab1'>Movie Review</a>
+                        <a href='#tabcontent2' id='tab2'>Job Applying</a>
+                        <a href='#tabcontent3' id='tab3'>Others</a>
+                    </div>
+                    <div id='tabcontent1' class='tab-content'>
+                        <h2>Movie Review</h2>
+                        <form action='#' method='get' oninput='output.value=rating.value'>
+                            <p>Note: [*] denotes mandatory field.</p>
+                            <fieldset>
+                                
+                                <body>
+<div class="mail">
+<h2>Name</h2>
+<form name="form1" action="#" onsubmit="required()">
+<ul style="list-style: none;">
+<li><input type='text' name ='text1'/></li>
+
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+</div>
+<script src="non-empty.js"></script>
+</body>
+
+                                <script type='text/javascript'>
+                                  function required()
+{
+var empt = document.forms["form1"]["text1"].value;
+if (empt == "")
+{
+alert("Please input a Value");
+return false;
+}
+else 
+{
+alert('Code has accepted : you can try another');
+return true; 
+}
+}  
+      </script>
+                            </fieldset>
+                            <fieldset>
+                                <label for='form1-movie'>[*] Which Movie?</label>
+                                <input type='text' id='form1-movie' name='movie' required>
+                            </fieldset>
+                            <fieldset>
+                                <label for='form1-comments'>Your comments</label>
+                                
+                                <script> onsubmit = "return ok(10);"</script>
+                                <script type='text/javascript'>
+                                function checkLength(){
+    var textbox = document.getElementById("textbox");
+    if(textbox.value.length <= 10 && textbox.value.length >= 5){
+        alert("success");
+    }
+    else{
+        alert("make sure the input is between 10 characters long")
+    }
+}
+</script>
+<input type="text" id="textbox">
+<input type="submit" name="textboxSubmit" onclick="checkLength()" />
+`
+                            </fieldset>
+                            
+                            
+                            
+                            
+                            
+                            <fieldset>
+                                <label for='rating'>[*] How you rate? <span>0-5</span></label>
+                                <input type='range' id='rating' name='rating' min='0' max='5' value='3' step='1'>
+                                <output name='output' for='rating'>3</output>
+                            </fieldset>
+                            
+                            <input type='submit' value='Submit Review'>
+                        </form>
+                        
+                    </div>
+                    <div id='tabcontent2' class='tab-content'>
+                        <h2>Job Applying</h2>
+                        <form action='#' method='get'>
+                            <p>Note: [*] denotes mandatory field.</p>
+                            <fieldset>
+                                <label for='form2-name'>[*] Your Name</label>
+                                <input type='text' id='form2-name' name='name' required>
+                            </fieldset>
+                            <fieldset>
+                                <label for='form2-email'>[*] Your Email</label>
+                                <input type='email' id='form2-email' name='email' required>
+                            </fieldset>
+                            <fieldset>
+                                <label for='form2-position'>[*] Which position do you want to
+                                    apply?</label>
+                                <input type='text' id='form2-position' name='position' required>
+                            </fieldset>
+                            <fieldset>
+                                <label for='form2-resume'>[*] Your resume: </label>
+                                <textarea id='form2-resume' name='resume' required></textarea>
+                            </fieldset>
+                            <input type='submit' value='Submit Job Application'>
+                        </form>
+                    </div>
+                    <div id='tabcontent3' class='tab-content'>
+                        <h2>Others</h2>
+                        <form action='#' method='get'>
+                            <p>Note: [*] denotes mandatory field.</p>
+                            <fieldset>
+                                <label for='form3-name'>Your Name</label>
+                                <input type='text' id='form3-name' name='name'>
+                            </fieldset>
+                            <fieldset>
+                                <label for='form2-email'>[*] Your Email</label>
+                                <input type='email' id='form2-email' name='email' required>
+                            </fieldset>
+                            <fieldset>
+                                <label for='form3-comments'>[*] Your comments: </label>
+                                <textarea id='form3-comments' name='comment' required></textarea>
+                            </fieldset>
+                            <input type='submit' value='Submit Comments'>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-help">
+            <div class="contact">
+                <h4>Contact Us</h4> Get in touch here if you have any queries or
+                issues.
+            </div>
+            <div class="support">
+                <h4>Help & Support</h4> Click here for FAQs, order information, T&Cs,
+                errata and code downloads.
+            </div>
+            <div class="newsletter">
+                <h4>Alerts & Offers</h4> Sign up to our emails for regular updates and
+                exclusive discounts.
+                <form>
+                    <input type='email' placeholder='Enter your email address'>
+                    <input type='submit' value='subscribe'>
+                </form>
+            </div>
+            <div class="search">
+                <h4>Search Movies</h4>
+                <form>
+                    <input type='text' placeholder='Movie name, year, actors'>
+                    <input type='submit' value='search'>
+                </form>
+            </div>
+        </div>
+        <div class="back-to-top">
+            <a href='#top'>⬆ Back to Top.</a>
+        </div>
+        <div class="copyright">
+            &copy; 2015. São Paulo Movie Store.
+        </div>
+        <div class="footer-nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="all-movies.html">All Movies</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>
